@@ -1,8 +1,11 @@
 import express from 'express'
 
 const app = express()
+
+//para que o json seja aceito 
 app.use(express.json())
 
+// armazenamento de dados
 const users = []
 
 //adicionar usuarios
@@ -20,5 +23,6 @@ app.get('/usuarios', (req, res) => {
 
 })
 
+//porta a ser acessada 
 app.listen(3000)
 
